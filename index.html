@@ -1,453 +1,335 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NDOKI Nigeria | Heritage Fashion</title>
-    <link rel="stylesheet" href="./assets/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ndoki — African Sustainable Fashion Rooted in Heritage</title>
+    <meta
+      name="description"
+      content="Ndoki is an African sustainable fashion brand rooted in culture, heritage and storytelling, built around the handwoven Akwete textile of Eastern Nigeria."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-row">
+        <a href="index.html" class="brand">NDOKI<span></span></a>
 
-    <!-- Header / Navigation -->
-    <header class="header" id="header">
-        <div class="header__container">
-            <a href="#home" class="header__logo">
-                <span class="logo-text">NDOKI</span>
-                <span class="logo-sub">NIGERIA</span>
-            </a>
+        <nav aria-label="Primary">
+          <ul class="nav-main">
+            <li><a href="index.html" class="nav-link is-active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="ndoki-clan.html" class="nav-link">Ndoki Clan</a></li>
+            <li><a href="ndoki-trybe.html" class="nav-link">Ndoki Trybe</a></li>
+            <li><a href="shop.html" class="nav-link">Shop</a></li>
 
-            <nav class="nav" id="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#shop" class="nav__link">Shop</a></li>
-                    <li class="nav__item"><a href="#ndoki-clan" class="nav__link">Ndoki Clan</a></li>
-                    <li class="nav__item"><a href="#ndoki-trybe" class="nav__link">Ndoki Trybe</a></li>
-                    <li class="nav__item nav__item--dropdown">
-                        <a href="#collection" class="nav__link">Collection <svg class="nav__arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-                        <ul class="nav__dropdown">
-                            <li><a href="#genexix26">Genexix '26</a></li>
-                            <li><a href="#ije-aw26">Ije-AW26</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
+            <li class="has-dropdown">
+              <a href="#" class="nav-link"
+                >Collections <span class="caret"></span
+              ></a>
+              <ul class="dropdown">
+                <li><a href="genexix-26.html">Genexix &rsquo;26</a></li>
+                <li><a href="ije-aw26.html">Ije&ndash;AW26</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
 
-            <div class="header__actions">
-                <button class="header__cart" aria-label="Shopping Cart">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-                        <line x1="3" y1="6" x2="21" y2="6"/>
-                        <path d="M16 10a4 4 0 01-8 0"/>
-                    </svg>
-                    <span class="cart-count">0</span>
-                </button>
-                <button class="header__menu-btn" id="menuBtn" aria-label="Toggle Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+        <div class="nav-actions">
+          <a href="shop.html" class="btn btn-solid nav-shop-btn">Shop Now</a>
+          <button
+            class="hamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
         </div>
+      </div>
     </header>
 
-    <!-- Mobile Navigation Overlay -->
-    <div class="mobile-nav" id="mobileNav">
-        <ul class="mobile-nav__list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#ndoki-clan">Ndoki Clan</a></li>
-            <li><a href="#ndoki-trybe">Ndoki Trybe</a></li>
-            <li class="mobile-nav__dropdown">
-                <a href="#collection" class="mobile-nav__toggle">Collection <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-                <ul class="mobile-nav__submenu">
-                    <li><a href="#genexix26">Genexix '26</a></li>
-                    <li><a href="#ije-aw26">Ije-AW26</a></li>
-                </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <div class="mobile-nav" aria-hidden="true">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="ndoki-clan.html" class="nav-link">Ndoki Clan</a></li>
+        <li><a href="ndoki-trybe.html" class="nav-link">Ndoki Trybe</a></li>
+        <li><a href="shop.html" class="nav-link">Shop</a></li>
+        <li>
+          <a href="#" class="nav-link mobile-collections-toggle"
+            >Collections <span class="caret mobile-caret"></span
+          ></a>
+          <div class="mobile-sub">
+            <a href="genexix-26.html">Genexix &rsquo;26</a>
+            <a href="ije-aw26.html">Ije&ndash;AW26</a>
+          </div>
+        </li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
     </div>
 
-    <!-- Hero Section with Image Slider -->
-    <section class="hero" id="home">
-        <div class="hero__slider" id="heroSlider">
-            <div class="hero__slide hero__slide--active" style="background-image: url('./assets/img/Ndoki47.jpeg')">
-                <div class="hero__overlay"></div>
-                <div class="hero__content">
-                    <p class="hero__tagline">Heritage Woven Into Fashion</p>
-                    <h1 class="hero__title">NDOKI</h1>
-                    <p class="hero__subtitle">Where Tradition Meets Tomorrow</p>
-                    <a href="#shop" class="btn btn--primary">Explore Collection</a>
-                </div>
-            </div>
-            <div class="hero__slide" style="background-image: url('./assets/img/Ndoki87.jpeg')">
-                <div class="hero__overlay"></div>
-                <div class="hero__content">
-                    <p class="hero__tagline">Handwoven by Artisans</p>
-                    <h1 class="hero__title">AKWETE</h1>
-                    <p class="hero__subtitle">A Living Archive of Culture</p>
-                    <a href="#shop" class="btn btn--primary">Shop Akwete</a>
-                </div>
-            </div>
-            <div class="hero__slide" style="background-image: url('./assets/img/Ndoki95.jpeg')">
-                <div class="hero__overlay"></div>
-                <div class="hero__content">
-                    <p class="hero__tagline">Sustainable. Timeless. Authentic.</p>
-                    <h1 class="hero__title">COLLECTION</h1>
-                    <p class="hero__subtitle">Genexix '26 Now Available</p>
-                    <a href="#collection" class="btn btn--primary">View Collection</a>
-                </div>
-            </div>
-            <div class="hero__slide" style="background-image: url('./assets/img/Ndoki83.jpeg')">
-                <div class="hero__overlay"></div>
-                <div class="hero__content">
-                    <p class="hero__tagline">Pure. Styled with Passion. Soft on Skin</p>
-                    <h1 class="hero__title">NDOKI TRYBE</h1>
-                    <p class="hero__subtitle">The Tybe Now Available</p>
-                    <a href="#collection" class="btn btn--primary">View Collection</a>
-                </div>
-            </div>
+    <!-- ============ HERO SLIDER ============ -->
+    <section class="hero" aria-label="Featured looks">
+      <div class="hero-slide is-active">
+        <img
+          src="https://images.pexels.com/photos/28959523/pexels-photo-28959523.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Model in elegant contemporary African fashion, outdoors in Nigeria"
+        />
+      </div>
+      <div class="hero-slide">
+        <img
+          src="https://images.pexels.com/photos/30714671/pexels-photo-30714671.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Black and white editorial portrait of a menswear model in Ibadan, Nigeria"
+        />
+      </div>
+      <div class="hero-slide">
+        <img
+          src="https://images.pexels.com/photos/34625881/pexels-photo-34625881.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Woman in traditional African attire and headwrap, Ado Ekiti, Nigeria"
+        />
+      </div>
+      <div class="hero-slide">
+        <img
+          src="https://images.pexels.com/photos/6634341/pexels-photo-6634341.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Close-up of a weaver's hands working an Akwete-style handloom"
+        />
+      </div>
+
+      <div class="hero-content">
+        <span class="eyebrow hero-eyebrow"
+          >Eastern Nigeria &middot; Handwoven Since Generations Past</span
+        >
+        <h1 class="hero-title">Heritage,<br />Woven Forward.</h1>
+        <p class="hero-sub">
+          Ndoki is an African sustainable fashion house rooted in culture,
+          heritage and storytelling — built around Akwete, the handwoven textile
+          of the women of Ndoki land.
+        </p>
+        <div class="hero-ctas">
+          <a href="shop.html" class="btn btn-invert">Shop The Collection</a>
+          <a href="about.html" class="btn btn-solid">Our Story</a>
         </div>
-        <div class="hero__controls">
-            <button class="hero__arrow hero__arrow--prev" id="prevSlide" aria-label="Previous Slide">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            </button>
-            <div class="hero__dots" id="heroDots">
-                <button class="hero__dot hero__dot--active" data-index="0" aria-label="Slide 1"></button>
-                <button class="hero__dot" data-index="1" aria-label="Slide 2"></button>
-                <button class="hero__dot" data-index="2" aria-label="Slide 3"></button>
-                <button class="hero__dot" data-index="3" aria-label="Slide 4"></button>
-            </div>
-            <button class="hero__arrow hero__arrow--next" id="nextSlide" aria-label="Next Slide">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </button>
-        </div>
+      </div>
+
+      <div class="hero-dots">
+        <button class="hero-dot is-active" aria-label="Show slide 1"></button>
+        <button class="hero-dot" aria-label="Show slide 2"></button>
+        <button class="hero-dot" aria-label="Show slide 3"></button>
+        <button class="hero-dot" aria-label="Show slide 4"></button>
+      </div>
     </section>
 
-    <!-- Categories Section -->
-    <section class="categories" id="shop">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-header__tag">Shop by Category</p>
-                <h2 class="section-header__title">Curated for You</h2>
-            </div>
-            <div class="categories__grid">
-                <div class="categories__card">
-                    <div class="categories__image-wrap">
-                        <img src="./assets/img/img1.jpeg" alt="Menswear Collection" class="categories__image" loading="lazy">
-                        <div class="categories__overlay"></div>
-                    </div>
-                    <div class="categories__info">
-                        <h3 class="categories__name">Menswear</h3>
-                        <p class="categories__desc">Bold silhouettes rooted in heritage</p>
-                        <a href="#menswear" class="btn btn--outline">Shop Menswear</a>
-                    </div>
-                </div>
-                <div class="categories__card">
-                    <div class="categories__image-wrap">
-                        <img src="./assets/img/Ndoki77.jpeg" alt="Womenswear Collection" class="categories__image" loading="lazy">
-                        <div class="categories__overlay"></div>
-                    </div>
-                    <div class="categories__info">
-                        <h3 class="categories__name">Womenswear</h3>
-                        <p class="categories__desc">Elegance woven with tradition</p>
-                        <a href="#womenswear" class="btn btn--outline">Shop Womenswear</a>
-                    </div>
-                </div>
-                <div class="categories__card">
-                    <div class="categories__image-wrap">
-                        <img src="./assets/img/nh2.jpeg" alt="Bespoke Collection" class="categories__image" loading="lazy">
-                        <div class="categories__overlay"></div>
-                    </div>
-                    <div class="categories__info">
-                        <h3 class="categories__name">Bespoke</h3>
-                        <p class="categories__desc">Tailored to your unique story</p>
-                        <a href="#bespoke" class="btn btn--outline">Shop Bespoke</a>
-                    </div>
-                </div>
-            </div>
+    <svg
+      class="weave-divider"
+      viewBox="0 0 64 22"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      <defs>
+        <pattern
+          id="weaveA"
+          width="16"
+          height="22"
+          patternUnits="userSpaceOnUse"
+        >
+          <path
+            d="M0 11 L8 0 L16 11 L8 22 Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+          />
+        </pattern>
+      </defs>
+      <rect width="64" height="22" fill="url(#weaveA)" />
+    </svg>
+
+    <!-- ============ BRAND STORY STRIP ============ -->
+    <section class="section">
+      <div class="wrap story-strip">
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/4219649/pexels-photo-4219649.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Artisan hands weaving colourful thread on a traditional hand loom"
+            loading="lazy"
+          />
+        </figure>
+        <div class="story-copy">
+          <span class="eyebrow">About Ndoki</span>
+          <h2 style="margin-top: 16px">A living archive, worn.</h2>
+          <p style="margin-top: 24px">
+            At the heart of the brand is Akwete textile, a signature handwoven
+            fabric meticulously crafted by the women of Ndoki land in Eastern
+            Nigeria. Each Akwete textile is more than fabric — it is a living
+            archive, carrying motifs that symbolize identity, history, values
+            and community.
+          </p>
+          <p>
+            By working directly with local artisans, Ndoki preserves indigenous
+            craftsmanship while creating contemporary designs that honor the
+            past and embrace the future.
+          </p>
+          <a href="about.html" class="btn">Read The Full Story</a>
         </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about__grid">
-                <div class="about__image-col">
-                    <div class="about__image-wrapper">
-                        <img src="./assets/img/IMG_7217.jpg" alt="Ndoki Artisan Weaving Akwete" class="about__image" loading="lazy">
-                        <div class="about__image-accent"></div>
-                    </div>
-                </div>
-                <div class="about__content-col">
-                    <div class="section-header section-header--left">
-                        <p class="section-header__tag">Our Story</p>
-                        <h2 class="section-header__title">About Ndoki</h2>
-                    </div>
-                    <div class="about__text">
-                        <p>Ndoki is an African sustainable fashion brand rooted in culture, heritage and storytelling. At the heart of the brand is Akwete textile &mdash; a signature handwoven fabric meticulously crafted by the women of Ndoki land in Eastern Nigeria.</p>
-                        <p>Each Akwete textile is more than fabric, it is a living archive. Handwoven using techniques passed down through generations, the cloth carries deep cultural meaning, with motifs that symbolize identity, history, values and community. Every pattern tells a story of lineage, resilience, womanhood and tradition.</p>
-                        <p>By working directly with local artisans, Ndoki preserves indigenous craftsmanship while creating contemporary designs that honor the past and embrace the future. Sustainability is not a trend for Ndoki, it is a commitment to ethical production, cultural preservation and empowering women through economic opportunity.</p>
-                        <p>Ndoki stands at the intersection of heritage and modernity, transforming tradition into timeless fashion.</p>
-                    </div>
-                    <a href="#about-full" class="btn btn--primary">Read More</a>
-                </div>
-            </div>
+    <!-- ============ CATEGORY CARDS ============ -->
+    <section class="section" style="padding-top: 0">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Shop By World</span>
+          <h2>Three Worlds. One House.</h2>
+          <p>
+            From tailored ready-to-wear to garments made to your exact measure —
+            explore Ndoki across menswear, womenswear and bespoke.
+          </p>
         </div>
+      </div>
+      <div class="category-grid">
+        <a class="category-card" href="shop.html#menswear">
+          <img
+            src="https://images.pexels.com/photos/2955376/pexels-photo-2955376.jpeg?auto=compress&cs=tinysrgb&w=1000"
+            alt="Menswear model in a tailored black suit"
+            loading="lazy"
+          />
+          <div class="category-copy">
+            <span class="eyebrow">01 &mdash; For Him</span>
+            <h3>Menswear</h3>
+            <span class="btn btn-invert">Shop Menswear</span>
+          </div>
+        </a>
+        <a class="category-card" href="shop.html#womenswear">
+          <img
+            src="https://images.pexels.com/photos/33968170/pexels-photo-33968170.jpeg?auto=compress&cs=tinysrgb&w=1000"
+            alt="Portrait of a woman in traditional African attire and jewellery"
+            loading="lazy"
+          />
+          <div class="category-copy">
+            <span class="eyebrow">02 &mdash; For Her</span>
+            <h3>Womenswear</h3>
+            <span class="btn btn-invert">Shop Womenswear</span>
+          </div>
+        </a>
+        <a class="category-card" href="shop.html#bespoke">
+          <img
+            src="https://images.pexels.com/photos/6765658/pexels-photo-6765658.jpeg?auto=compress&cs=tinysrgb&w=1000"
+            alt="Tailor measuring a client for a bespoke garment"
+            loading="lazy"
+          />
+          <div class="category-copy">
+            <span class="eyebrow">03 &mdash; Made For You</span>
+            <h3>Bespoke</h3>
+            <span class="btn btn-invert">Book Bespoke</span>
+          </div>
+        </a>
+      </div>
     </section>
 
-    <!-- Featured Collection -->
-    <section class="featured" id="collection">
-        <div class="container">
-            <div class="section-header section-header--center">
-                <p class="section-header__tag">Featured</p>
-                <h2 class="section-header__title">The Genexix '26 Collection</h2>
-                <p class="section-header__desc">A new beginning. Heritage reimagined for the modern era.</p>
-            </div>
-            <div class="featured__grid">
-                <div class="featured__item">
-                    <div class="featured__image-wrap">
-                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cda3a90?w=600&q=80" alt="Featured piece 1" class="featured__image" loading="lazy">
-                        <div class="featured__badge">New</div>
-                        <button class="featured__quick-view">Quick View</button>
-                    </div>
-                    <div class="featured__details">
-                        <h4 class="featured__name">Akwete Wrap Blazer</h4>
-                        <p class="featured__price">&#8358;85,000</p>
-                    </div>
-                </div>
-                <div class="featured__item">
-                    <div class="featured__image-wrap">
-                        <img src="https://images.unsplash.com/photo-1485462537746-965f33f7f6a7?w=600&q=80" alt="Featured piece 2" class="featured__image" loading="lazy">
-                        <div class="featured__quick-view">Quick View</button>
-                    </div>
-                    <div class="featured__details">
-                        <h4 class="featured__name">Ndoki Heritage Gown</h4>
-                        <p class="featured__price">&#8358;120,000</p>
-                    </div>
-                </div>
-                <div class="featured__item">
-                    <div class="featured__image-wrap">
-                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&q=80" alt="Featured piece 3" class="featured__image" loading="lazy">
-                        <div class="featured__badge">Bestseller</div>
-                        <button class="featured__quick-view">Quick View</button>
-                    </div>
-                    <div class="featured__details">
-                        <h4 class="featured__name">Ije Print Tunic</h4>
-                        <p class="featured__price">&#8358;55,000</p>
-                    </div>
-                </div>
-                <div class="featured__item">
-                    <div class="featured__image-wrap">
-                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80" alt="Featured piece 4" class="featured__image" loading="lazy">
-                        <button class="featured__quick-view">Quick View</button>
-                    </div>
-                    <div class="featured__details">
-                        <h4 class="featured__name">Clan Streetwear Jacket</h4>
-                        <p class="featured__price">&#8358;65,000</p>
-                    </div>
-                </div>
-            </div>
+    <svg
+      class="weave-divider"
+      viewBox="0 0 64 22"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      <rect width="64" height="22" fill="url(#weaveA)" />
+    </svg>
+
+    <!-- ============ TRYBE TEASER ============ -->
+    <section class="trybe-band">
+      <img
+        src="https://images.pexels.com/photos/32430590/pexels-photo-32430590.jpeg?auto=compress&cs=tinysrgb&w=1920"
+        alt="Streetwear model posing by an urban shopfront"
+        loading="lazy"
+      />
+      <div class="wrap">
+        <div class="trybe-copy">
+          <span class="eyebrow" style="color: var(--ash-2)"
+            >A Substore of Ndoki</span
+          >
+          <h2
+            style="
+              color: var(--white);
+              margin-top: 16px;
+              font-size: clamp(1.9rem, 4vw, 2.8rem);
+            "
+          >
+            Ndoki Trybe
+          </h2>
+          <p>
+            The street-facing edge of Ndoki — where heritage motifs meet
+            everyday wear. Menswear, womenswear and bespoke streetwear, cut for
+            the culture.
+          </p>
+          <a href="ndoki-trybe.html" class="btn btn-invert">Enter The Trybe</a>
         </div>
+      </div>
     </section>
 
-    <!-- Brand Values -->
-    <section class="values">
-        <div class="container">
-            <div class="values__grid">
-                <div class="values__item">
-                    <div class="values__icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M24 4L6 14v20l18 10 18-10V14L24 4z"/>
-                            <path d="M6 14l18 10m0 0v20m0-20l18-10"/>
-                        </svg>
-                    </div>
-                    <h4 class="values__title">Heritage</h4>
-                    <p class="values__desc">Every thread carries centuries of tradition and cultural significance.</p>
-                </div>
-                <div class="values__item">
-                    <div class="values__icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="24" cy="18" r="8"/>
-                            <path d="M8 44c0-8.837 7.163-16 16-16s16 7.163 16 16"/>
-                        </svg>
-                    </div>
-                    <h4 class="values__title">Empowerment</h4>
-                    <p class="values__desc">Empowering women artisans through economic opportunity and recognition.</p>
-                </div>
-                <div class="values__item">
-                    <div class="values__icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 36c0-6.627 5.373-12 12-12s12 5.373 12 12"/>
-                            <circle cx="24" cy="14" r="6"/>
-                            <path d="M4 36h40"/>
-                        </svg>
-                    </div>
-                    <h4 class="values__title">Sustainability</h4>
-                    <p class="values__desc">Ethical production that respects both people and the planet.</p>
-                </div>
-                <div class="values__item">
-                    <div class="values__icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="6" y="6" width="36" height="36" rx="4"/>
-                            <path d="M6 18h36M18 18v24"/>
-                        </svg>
-                    </div>
-                    <h4 class="values__title">Craftsmanship</h4>
-                    <p class="values__desc">Handwoven mastery perfected through generations of skilled artisans.</p>
-                </div>
-            </div>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">NDOKI</a>
+          <p>
+            African sustainable fashion rooted in culture, heritage and
+            storytelling — woven by the women of Ndoki land, Eastern Nigeria.
+          </p>
         </div>
-    </section>
-
-    <!-- Ndoki Trybe Teaser -->
-    <section class="trybe" id="ndoki-trybe">
-        <div class="trybe__bg" style="background-image: url('./assets/img/Ndoki47.jpeg')"></div>
-        <div class="trybe__overlay"></div>
-        <div class="container">
-            <div class="trybe__content">
-                <p class="trybe__tag">Ndoki Trybe</p>
-                <h2 class="trybe__title">Street Culture Meets Heritage</h2>
-                <p class="trybe__desc">The Ndoki Trybe is our streetwear sub-label &mdash; where raw urban energy meets the soul of Akwete. Authentic. Unapologetic. Ndoki.</p>
-                <div class="trybe__actions">
-                    <a href="#trybe-menswear" class="btn btn--primary">Menswear</a>
-                    <a href="#trybe-womenswear" class="btn btn--primary">Womenswear</a>
-                    <a href="#trybe-bespoke" class="btn btn--outline btn--light">Bespoke</a>
-                </div>
-            </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="ndoki-trybe.html">Ndoki Trybe</a></li>
+            <li><a href="ndoki-clan.html">Ndoki Clan</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter__inner">
-                <div class="newsletter__text">
-                    <h3 class="newsletter__title">Join the Ndoki Circle</h3>
-                    <p class="newsletter__desc">Be the first to know about new collections, stories, and exclusive offers.</p>
-                </div>
-                <form class="newsletter__form" id="newsletterForm">
-                    <input type="email" class="newsletter__input" placeholder="Enter your email" required>
-                    <button type="submit" class="btn btn--primary">Subscribe</button>
-                </form>
-            </div>
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="genexix-26.html">Genexix &rsquo;26</a></li>
+            <li><a href="ije-aw26.html">Ije&ndash;AW26</a></li>
+            <li><a href="shop.html#menswear">Menswear</a></li>
+            <li><a href="shop.html#womenswear">Womenswear</a></li>
+            <li><a href="shop.html#bespoke">Bespoke</a></li>
+          </ul>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header section-header--center">
-                <p class="section-header__tag">Get in Touch</p>
-                <h2 class="section-header__title">Contact Us</h2>
-            </div>
-            <div class="contact__grid">
-                <div class="contact__info">
-                    <div class="contact__info-item">
-                        <h4>Visit Us</h4>
-                        <p>12 Admiralty Way, Lekki Phase 1<br>Lagos, Nigeria</p>
-                    </div>
-                    <div class="contact__info-item">
-                        <h4>Call Us</h4>
-                        <p>+234 (0) 812 345 6789</p>
-                    </div>
-                    <div class="contact__info-item">
-                        <h4>Email Us</h4>
-                        <p>hello@ndokinigeria.com</p>
-                    </div>
-                    <div class="contact__info-item">
-                        <h4>Follow Us</h4>
-                        <div class="contact__social">
-                            <a href="#" aria-label="Instagram">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-                            </a>
-                            <a href="#" aria-label="Twitter">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.28-.03-.56-.08-.83A7.72 7.72 0 0023 3z"/></svg>
-                            </a>
-                            <a href="#" aria-label="Facebook">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-                            </a>
-                            <a href="#" aria-label="TikTok">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact__form" id="contactForm">
-                    <div class="contact__form-row">
-                        <input type="text" class="contact__input" placeholder="First Name" required>
-                        <input type="text" class="contact__input" placeholder="Last Name" required>
-                    </div>
-                    <input type="email" class="contact__input" placeholder="Email Address" required>
-                    <select class="contact__input contact__select">
-                        <option value="" disabled selected>Subject</option>
-                        <option value="general">General Inquiry</option>
-                        <option value="bespoke">Bespoke Order</option>
-                        <option value="wholesale">Wholesale</option>
-                        <option value="press">Press</option>
-                        <option value="trybe">Ndoki Trybe</option>
-                    </select>
-                    <textarea class="contact__input contact__textarea" rows="5" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn--primary btn--full">Send Message</button>
-                </form>
-            </div>
+        <div class="footer-col footer-newsletter">
+          <h4>Stay Woven In</h4>
+          <p style="font-size: 0.88rem">
+            Join the list for collection launches and studio notes.
+          </p>
+          <form data-demo-form>
+            <input
+              type="email"
+              placeholder="Your email address"
+              required
+              aria-label="Email address"
+            />
+            <button type="submit">Join</button>
+          </form>
+          <p class="notify-msg" data-demo-msg></p>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__grid">
-                <div class="footer__brand">
-                    <a href="#home" class="footer__logo">
-                        <span class="logo-text">NDOKI</span>
-                        <span class="logo-sub">NIGERIA</span>
-                    </a>
-                    <p class="footer__tagline">Transforming tradition into timeless fashion.</p>
-                </div>
-                <div class="footer__links">
-                    <h5 class="footer__heading">Shop</h5>
-                    <ul>
-                        <li><a href="#menswear">Menswear</a></li>
-                        <li><a href="#womenswear">Womenswear</a></li>
-                        <li><a href="#bespoke">Bespoke</a></li>
-                        <li><a href="#ndoki-trybe">Ndoki Trybe</a></li>
-                    </ul>
-                </div>
-                <div class="footer__links">
-                    <h5 class="footer__heading">Collections</h5>
-                    <ul>
-                        <li><a href="#genexix26">Genexix '26</a></li>
-                        <li><a href="#ije-aw26">Ije-AW26</a></li>
-                        <li><a href="#ndoki-clan">Ndoki Clan</a></li>
-                    </ul>
-                </div>
-                <div class="footer__links">
-                    <h5 class="footer__heading">Company</h5>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Sustainability</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <p>&copy; 2026 Ndoki Nigeria. All rights reserved.</p>
-                <div class="footer__legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span
+          >&copy; 2026 Ndoki. All rights reserved. Made in Eastern
+          Nigeria.</span
+        >
+        <span>
+          <a href="#">Instagram</a><a href="#">Pinterest</a
+          ><a href="#">TikTok</a>
+        </span>
+      </div>
     </footer>
 
-    <script src="./assets/main.js"></script>
-</body>
+    <script src="./assets/js/main.js" defer></script>
+  </body>
 </html>
